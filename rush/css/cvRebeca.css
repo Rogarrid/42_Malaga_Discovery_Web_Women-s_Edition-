@@ -1,0 +1,254 @@
+Copia de cv.css
+/**/
+html,body{
+  margin:0px;
+  font-family: Roboto, Arial, Helvetica;
+  font-size:15px;
+}
+h2 {
+  font-weight:700;
+}
+.hero-image{
+  background: url('http://3.bp.blogspot.com/-Rnu-vLpd450/VHejWUmmoTI/AAAAAAAAAhQ/h1XSc8CZ6uc/s1600/apple_desktop-wallpaper-1920x1080.jpg'), black;
+  background-size: cover;
+  background-position: right;
+  color:white;
+
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+header {
+  text-align :center;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.navbar-custom {
+  background-color:#46d0b5;
+
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-custom {
+    background: #111820;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-brand.active, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-custom .navbar-nav li a {
+    color: #fff;
+}
+
+.tech {
+    margin: 0 0 15px;
+    right: 0;
+}
+.social  {
+  padding:12px;
+   font-size:2em;
+  background-color:#115f8d;
+  color:white;
+}
+.white {
+  color:white;
+}
+.me {
+  background-color:#307daa;
+}
+/*separtaor*/
+.separator {
+     margin-top: 0;
+    width:40%;
+  margin: 0 30% 0 30%;
+    margin-bottom: 15px;
+    font-size: 36px;
+    border-bottom: 6px solid white;
+    padding-bottom: 5px;;
+}
+
+#foto {
+  width:150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 5px solid rgb(42, 70, 105);
+  border-radius: 100px;
+}
+
+.servicios h2 {
+  padding-bottom:30px;
+}
+p {
+  text-align:inherit;
+  font-size:20px;
+  line-height:1.5;
+  font-family: 'Lato', sans-serif;
+  color:white;
+  margin: 10px 0 10px;
+}
+
+.portafolio-text {
+  margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.fa-stack {
+    font-size:4em;
+}
+.separator-portafolio {
+
+ background-color:#307daa; /*el sepataor principal va  antes de este*/
+  margin-bottom:50px;
+}
+
+.exp {
+  color:gray;
+}
+
+#desc {
+  color:gray;
+  font-size: 1.5rem;
+}
+
+.white {
+  color:white
+}
+h2 {
+  font-size:3em;
+ font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+
+}
+
+.text-intro {
+  font-size :4.3em;
+  font-weight: 700;
+}
+
+.texto-servicios p{
+ color:gray;
+}
+
+.edu {
+  margin-top: 50px;
+  color:#165985;
+}
+
+.edu2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color:#334049;
+}
+
+.otros {
+  color:#28353e;
+  font-size: 1.75;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section {
+    padding: 75px 0;
+}
+section .servicios {
+  margin-bottom:30px;
+}
+
+.email {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.email #mailto {
+ 
+  color:#28353e;
+}
+
+.footer-page .first {
+  margin-top:75px;
+ border-bottom:1px solid rgba(225, 225, 225, 0.7);
+
+}
+
+@media (max-width: 767px){
+  section {
+    padding: 75px 0;
+}
+.navbar-custom.affix .navbar-brand {
+    font-size: 1.7em;
+}
+}
+
+@media (min-width: 768px)
+{
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 19.5px;
+}
+}
+.footer-page {
+ background-color:#28353e;
+}
+
+.skills {
+  background-color:#F7F7F7;
+}
+h4 {
+      font-weight: 700;
+}
+/*charges*/
+.containerCircle{
+    width: 110px;
+    height: 110px;
+    margin: 60px auto;
+}
+.prec{
+    top: 35px;
+    position: relative;
+    font-size: 30px;
+}
+
+.circle{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #F7F7F7;
+}
+
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+
+    background-color:#13b0a5;
+    background-image:
+        linear-gradient(180deg, transparent 50%, #e0e0e0 50%),
+        linear-gradient(90deg, #e0e0e0 50%, transparent 50%);

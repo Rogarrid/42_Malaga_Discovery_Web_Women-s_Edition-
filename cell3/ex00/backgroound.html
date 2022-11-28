@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="backgroound.css">
+
+    <title>backgroound</title>
+  </head>
+  <body>
+    <hr>
+    <div id="random_change">
+      <button id="color_change" type="button" class="btn btn-dark btn-large btn-block btn-lg btn-cta"><i class="fa-brands fa-apple"></i>Click me!</button>
+    </div>
+  <script>
+  //# + numero random.pasado a hexadecimal y lo devuelve en string.coger valor que
+  //está en posicion 2 hasta la 8 guarda en nuevo array
+  function changeRandomColor() {
+    return '#' + Math.random().toString(16).slice(2, 8);
+  };
+
+  //guarda el elemento que hay en esa id (el botón);
+  var change = document.getElementById('color_change');
+
+  //escucha el click en el elemento botón y le aplica la función anterior.
+  //en el html busca el elemento random_change (div) y le cambia el fondo por el
+  //valor retornado en la función.
+  change.addEventListener('click', function() {
+    document.getElementById('random_change').style.backgroundColor = changeRandomColor();
+  });
+
+  </script>
+  </body>
+</html>

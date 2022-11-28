@@ -1,0 +1,111 @@
+body{
+    margin:0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+
+header h1{
+  text-align: center;
+  font-family:monospace;
+  font-size: 70px;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 15px 15px;
+}
+
+header{
+  background-color: #1746A2;
+}
+
+/* image */
+
+.perfil{
+  height: 60vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* container info */
+
+.container-info{
+  background-color: #1746A2;
+}
+
+.container-login h1{
+  font-family: monospace;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div #cursus{
+  font-family: monospace;
+  font-size: 15px;
+  color: #81C6E8;
+  margin-top: 15px;
+}
+
+.container-login p{
+  font-family: monospace;
+  font-style: italic;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container-login{
+  padding: 4px;
+  margin-top: 10px;
+}
+
+/* social */
+
+.container-fluid-footer{
+  padding: 5% 15%;
+}
+
+.footer-fa{
+  margin: 5px;
+}
+
+.contact{
+  background-color: #1746A2;
+  padding: 20px;
+}
+
+/* contact */
+
+#contact{
+  color: #fff;
+  font-size: 20px;
+  margin: auto 0 auto 0;
+}
+
+/* responsive */
+
+@media (max-width: 750px)
+{
+  header{
+    margin: 0 auto;
+  }
+  header h1{
+    text-align: center;
+    font-family:monospace;
+    font-size: 35px;
+    }
+
+  .perfil{
+    height: 40vh;
+    margin:0 auto;
+  }
+
+.container-login h1{
+    font-family: monospace;
+    font-size: 20px;
+  }
+}

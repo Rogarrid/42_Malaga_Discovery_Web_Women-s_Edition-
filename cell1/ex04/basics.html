@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico</title>
+    <style>
+              h1 {
+                  text-align:center;
+                  color:#FFFFFF;
+                  font-size:5rem;
+              }
+              img {
+                height: 250px;
+                margin: 10px 20px;
+              }
+              .container-ecommerce{
+                margin: 0px auto;
+                position: relative;
+              }
+              .container-flex{
+                display: flex;
+              }
+              .container-fluid-cta {
+                margin: 0px auto;
+                position: relative;
+
+                }
+              .btn-cta{
+                  margin: 5px 45px 15px;
+                }
+              .btn-ali {
+                margin-left: 250px;
+              }
+              .btn {
+                background: #2b7fb8;
+                background-image: -webkit-linear-gradient(top, #2b7fb8, #0c4a70);
+                background-image: -moz-linear-gradient(top, #2b7fb8, #0c4a70);
+                background-image: -ms-linear-gradient(top, #2b7fb8, #0c4a70);
+                background-image: -o-linear-gradient(top, #2b7fb8, #0c4a70);
+                background-image: linear-gradient(to bottom, #2b7fb8, #0c4a70);
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                font-family: Arial;
+                color: #ffffff;
+                font-size: 31px;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+              }
+              .btn:hover {
+                background: #0c86d1;
+                background-image: -webkit-linear-gradient(top, #0c86d1, #2181c2);
+                background-image: -moz-linear-gradient(top, #0c86d1, #2181c2);
+                background-image: -ms-linear-gradient(top, #0c86d1, #2181c2);
+                background-image: -o-linear-gradient(top, #0c86d1, #2181c2);
+                background-image: linear-gradient(to bottom, #0c86d1, #2181c2);
+                text-decoration: none;
+              }
+            .copyRight{
+              text-align: right;
+              font-style: italic;
+              font-family: monospace;
+            }
+    </style>
+  </head>
+  <body style="background-color:#ffc0cb;">
+    <h1>B@sico</h1>
+<section class="container-flex">
+  <div class="container-ecommerce">
+    <img src="amazon.png" alt="amazon">
+    <img src="aliexpress.jpg" alt="aliexpress">
+  </div>
+</section>
+<section class="container-flex">
+  <div class="container-fluid container-fluid-cta">
+    <a href="https://www.amazon.com/"><button type="button" class="btn btn-dark btn-large btn-block btn-lg btn-cta"><i class="fa-brands fa-apple"></i>Amazon</button></a>
+    <a href="https://es.aliexpress.com/"><button type="button" class="btn btn-dark btn-large btn-block btn-lg btn-cta btn-ali"><i class="fa-brands fa-apple"></i>Aliexpress</button></a>
+  </div>
+</section>
+<hr style="border:2px solid #fff">
+<p class="copyRight">© Rogarrid 2022</p>
+  </body>
+</html>

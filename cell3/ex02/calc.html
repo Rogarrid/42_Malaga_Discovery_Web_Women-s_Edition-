@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- style css -->
+
+    <style media="screen">
+      body{
+        background-image:url("calculate.jpeg");
+        background-size: cover;
+      }
+    .signOperators, .col{
+        justify-content: center;
+        margin: 25vh auto 20px;
+      }
+    #operators{
+      padding: 10px;
+      width: 62px;
+      height: 42px;
+    }
+
+    #calculate{
+      margin: 0 100vh;
+    }
+    </style>
+
+</head>
+<body>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input id="firstNumber" type="text" class="form-control" placeholder="Enter Number">
+      </div>
+      <div class="signOperators">
+        <select id="operators">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+          <option value="%">%</option>
+        </select>
+      </div>
+      <div class="col">
+        <input id="secondNumber" type="text" class="form-control" placeholder="Enter Number">
+      </div>
+    </div>
+  </form>
+<button id="calculate" type="button" class="btn btn-primary btn-lg">Try me!</button>
+
+<!-- JavaScript -->
+
+    <script>
+
+        document.querySelector('#calculate').addEventListener('click', function(){
+        const firstNumber = parseInt(document.querySelector('#firstNumber').value); // devuelve un argumento de tipo cadena y devuelve un entero de la base especificada. parseInt(string, base)
+        const secondNumber = parseInt(document.querySelector('#secondNumber').value);
+        const operators = document.querySelector('#operators').value; //devuelve un array con los valores correspondientes a las propiedades enumerables de un objeto (predeterminado)
+        let result;
+        if (firstNumber < 0 || secondNumber < 0) {
+            alert("Error :(")
+            console.log("Error :(");
+        }else if(operators  == '+'){
+            result = firstNumber + secondNumber;
+            alert(result);
+            console.log(result);
+        }else if( operators == '-'){
+            r = firstNumber - n2;
+            alert(r);
+            console.log(r);
+        }else if(operators == '*'){
+            result = firstNumber * secondNumber;
+            alert(result);
+            console.log(result);
+        }else if(operators == '/'){
+            if(secondNumber == 0){
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+            }else{
+                result = firstNumber / secondNumber;
+                alert(result);
+                console.log(rresult);
+            }
+        }else if(operators == '%'){
+            if(secondNumber == 0){
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+            }else{
+                result = firstNumber % secondNumber;
+                alert(result);
+                console.log(result);
+            }
+        }
+
+        });
+
+        window.setTimeout(tiempo, 30000);
+        function tiempo(){
+            alert('Please, use me...')
+        }
+    </script>
+</body>
+</html>
